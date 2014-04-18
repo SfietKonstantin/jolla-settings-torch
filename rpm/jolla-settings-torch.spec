@@ -20,10 +20,11 @@ License:    BSD
 URL:        https://github.com/SfietKonstantin/jolla-settings-torch
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  jolla-settings-torch.yaml
-Requires:   sailfishsilica-qt5 >= 0.10.9
-BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
+Requires:   jolla-settings
 BuildRequires:  pkgconfig(Qt5Core)
+BuildRequires:  pkgconfig(Qt5Gui)
 BuildRequires:  pkgconfig(Qt5DBus)
+BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(gstreamer-0.10)
 
 %description

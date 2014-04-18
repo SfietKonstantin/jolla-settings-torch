@@ -13,7 +13,9 @@ Configure: none
 Builder: qtc5
 PkgConfigBR:
 - Qt5Core
+- Qt5Gui
 - Qt5DBus
+- Qt5Qml
 - gstreamer-0.10
 PkgBR: []
 Requires:
