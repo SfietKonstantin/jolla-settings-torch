@@ -1,0 +1,26 @@
+Name: jolla-settings-torch
+Summary: Torch plugin for Jolla settings
+Version: 0.0
+Release: 1
+Group: Qt/Qt
+URL: https://github.com/SfietKonstantin/jolla-settings-torch
+License: BSD
+Sources:
+- '%{name}-%{version}.tar.bz2'
+Description: |
+  A torch plugin for Jolla settings
+Configure: none
+Builder: qtc5
+PkgConfigBR:
+- Qt5Core
+- Qt5DBus
+- gstreamer-0.10
+PkgBR: []
+Requires:
+- jolla-settings
+Files:
+- '%{_bindir}'
+- '%{_datadir}/jolla-settings'
+- '%{_datadir}/dbus-1'
+- '%{_libdir}/qt5/qml'
+

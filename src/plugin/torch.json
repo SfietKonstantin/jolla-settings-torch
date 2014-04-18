@@ -1,0 +1,25 @@
+{
+    "translation_catalog": "settings-torch",
+    "entries": [
+        {
+            "path": "system_settings/look_and_feel/torch",
+            "type": "page",
+            "title": "Torch",
+            "translation_id": "settings-torch-torch",
+            "icon": "image://theme/icon-m-ambience",
+            "order": 2000,
+            "params": {
+                "source": "/usr/share/jolla-settings/pages/torch/torchsettings.qml"
+            }
+        },
+        {
+            "path": "system_settings/look_and_feel/torch/enable_switch",
+            "type": "custom",
+            "params": {
+                "source": "/usr/share/jolla-settings/pages/torch/EnableSwitch.qml",
+                "cover_source": "/usr/share/jolla-settings/pages/torch/CoverIcon.qml",
+                "type": "grid"
+            }
+        }
+    ]
+}
