@@ -13,7 +13,7 @@ Page {
         }
 
         PageHeader {
-            title: "Torch"
+            title: qsTrId("settings-torch-torch")
         }
 
         ListItem {
@@ -31,7 +31,7 @@ Page {
                 checked: torchControl.enabled
                 automaticCheck: false
                 highlighted: down || enableItem.menuOpen
-                text: "Torch"
+                text: qsTrId("settings-torch-torch")
                 onClicked: {
                     if (torchControl.enabled) {
                         torchControl.disable()

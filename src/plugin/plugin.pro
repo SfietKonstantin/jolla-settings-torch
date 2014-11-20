@@ -21,6 +21,13 @@ SOURCES += plugin.cpp \
 
 OTHER_FILES += qmldir *.qml *.json qmldir *.js
 
+lupdate_only {
+SOURCES = *.qml
+}
+
+TRANSLATIONS = settings-torch-en.ts \
+               settings-torch-ru.ts
+
 import.files = qmldir
 import.path = $$TARGETPATH
 target.path = $$TARGETPATH
@@ -31,4 +38,7 @@ qmlpages.files = *.qml *.js
 plugin_entry.path = /usr/share/jolla-settings/entries
 plugin_entry.files = torch.json
 
-INSTALLS += target import plugin_entry qmlpages
+translations.path = /usr/share/translations
+translations.files = *.qm
+
+INSTALLS += target import plugin_entry qmlpages translations
