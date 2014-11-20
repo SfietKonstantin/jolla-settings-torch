@@ -63,5 +63,6 @@ rm -rf %{buildroot}
 %{_datadir}/jolla-settings
 %{_datadir}/dbus-1
 %{_libdir}/qt5/qml
+%{_datadir}/translations
 # >> files
 # << files
