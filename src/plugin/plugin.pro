@@ -25,7 +25,7 @@ lupdate_only {
 SOURCES = *.qml
 }
 
-TRANSLATIONS = settings-torch-en.ts \
+TRANSLATIONS = settings-torch_eng_en.ts \
                settings-torch-ru.ts
 
 import.files = qmldir
